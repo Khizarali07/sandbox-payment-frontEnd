@@ -24,7 +24,7 @@ function Products() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:3000/process-payment",
+        "https://sandbox-payment-backend-production.up.railway.app/process-payment",
         {
           paymentInfo, // Send paymentInfo as a nested object
         }
